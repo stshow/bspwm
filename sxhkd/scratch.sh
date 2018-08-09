@@ -1,5 +1,12 @@
 #!/bin/bash
 
+
+bspc-list-all-windows(){
+    for i in `bspc query -N`; do 
+        echo -en "\n$i "; xprop -id $i 2> /dev/null| grep CLASS
+    done | grep STRING | tee /tmp/bspwm-ids-$(id -u)
+}
+
 slack(){
     bspc-list-all-windows
     id=$(cat /tmp/bspwm-ids-$(id -u) | grep -i slack | awk '{print $1}')
