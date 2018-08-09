@@ -135,3 +135,22 @@ super + shift + s
 # Telegram scratch
 alt + shift + k
     ~/.config/sxhkd/telegram-scratch.sh
+
+# Telegram scratch
+alt + shift + z
+    ~/.config/sxhkd/telegram-scratch.sh
+
+
+XF86AudioRaiseVolume
+    vol-up
+XF86AudioLowerVolume 
+    vol-down
+XF86AudioMute 
+    vol-mute
+
+XF86AudioNext 
+    spotify-control next
+XF86AudioPrev
+    spotify-control prev
+XF86AudioPlay 
+    spotify-control play

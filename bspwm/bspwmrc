@@ -5,9 +5,14 @@
 sxhkd &
 
 #bspc monitor -d I II III IV V VI VII VIII IX X
-bspc monitor DVI-D-0 -d IV V VI VII 
-bspc monitor DP-1 -d I II III
-bspc monitor HDMI-0 -d VIII IX X
+#bspc monitor DVI-D-0 -d IV V VI VII 
+#bspc monitor DP-1 -d I II III
+#bspc monitor HDMI-0 -d VIII IX X
+
+## While loop to detect and config displays
+/usr/bin/bspwm_workspaces.sh &
+
+bspc config focus_follows_pointer true
 
 bspc config border_width         2
 bspc config window_gap           0
@@ -22,9 +27,13 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
-polybar center &
-polybar left &
-polybar right &
+
+## Polybar
+/usr/bin/polybar-launch.sh &
+#polybar center &
+#polybar left &
+#polybar right &
+
 
 ## Autostart
 /usr/bin/nm-applet &
@@ -32,6 +41,9 @@ polybar right &
 /usr/bin/slack &
 /usr/bin/telegram-desktop &
 /usr/bin/pasystray &
+autokey-gtk &
+/usr/bin/xfce4-power-manager &
+/usr/bin/nitrogen --restore &
 
 bspc rule -a Slack sticky=on state=floating hidden=on
 bspc rule -a TelegramDesktop sticky=on state=floating hidden=on
