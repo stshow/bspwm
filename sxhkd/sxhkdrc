@@ -124,22 +124,26 @@ super + {Left,Down,Up,Right}
 
 control + alt + l
     i3lock -c 000000
+
 # firefox window
 super + q
     firefox
 
 # Slack scratch
 super + shift + s
-    ~/.config/sxhkd/slack-scratch.sh
+    ~/.config/sxhkd/scratch.sh slack
 
 # Telegram scratch
 alt + shift + k
-    ~/.config/sxhkd/telegram-scratch.sh
+    ~/.config/sxhkd/scratch.sh telegram
 
-# Telegram scratch
+# Zoom scratch
 alt + shift + z
-    ~/.config/sxhkd/telegram-scratch.sh
+    ~/.config/sxhkd/scratch.sh zoom
 
+# Talkdesk scratch
+alt + t 
+    ~/.config/sxhkd/scratch.sh talkdesk
 
 XF86AudioRaiseVolume
     vol-up

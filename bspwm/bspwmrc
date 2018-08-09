@@ -44,6 +44,9 @@ bspc rule -a Screenkey manage=off
 autokey-gtk &
 /usr/bin/xfce4-power-manager &
 /usr/bin/nitrogen --restore &
+/usr/bin/parcellite &
 
 bspc rule -a Slack sticky=on state=floating hidden=on
 bspc rule -a TelegramDesktop sticky=on state=floating hidden=on
+bspc rule -a zoom sticky=on state=floating hidden=on
+bspc rule -a crx_idbejgmlldkhoiogoknpihhhbimbikdo sticky=on state=floating hidden=on
