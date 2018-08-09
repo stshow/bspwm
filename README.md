@@ -86,7 +86,11 @@ Restart your display manager and login.
 1. Polybar
 2. Scratchpad examples (Slack and Telegram). 
 
-#### Note: for scratchpads to work you need to copy `bspc-list-all-windows` into your $PATH (/usr/local/bin for example) and make sure you have `xprop` installed. 
+#### Note: for scratchpads to work you need to copy the following into your $PATH (/usr/local/bin for example) and make sure you have `xprop` installed.
+
+1.  bspc-list-all-windows
+2.  bspwm_workspaces.sh
+3.  polybar-launch.sh 
 
 ## To Do:
 
