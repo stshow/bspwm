@@ -1,0 +1,2 @@
+#!/bin/bash
+for i in `bspc query -N`; do echo -en "\n$i "; xprop -id $i 2> /dev/null| grep CLASS; done | grep STRING | tee /tmp/bspwm-ids-$(id -u)
