@@ -10,7 +10,7 @@ sxhkd &
 #bspc monitor HDMI-0 -d VIII IX X
 
 ## While loop to detect and config displays
-/usr/bin/bspwm_workspaces.sh &
+~/.config/bspwm/bspwm_workspaces.sh &
 
 bspc config focus_follows_pointer true
 
@@ -29,7 +29,7 @@ bspc rule -a Screenkey manage=off
 
 
 ## Polybar
-/usr/bin/polybar-launch.sh &
+~/.config/polybar/polybar-launch.sh &
 #polybar center &
 #polybar left &
 #polybar right &

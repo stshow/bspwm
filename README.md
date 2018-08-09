@@ -86,11 +86,6 @@ Restart your display manager and login.
 1. Polybar
 2. Scratchpad examples (Slack and Telegram). 
 
-#### Add the following to your $PATH
-
-1.  bspwm_workspaces.sh
-2.  polybar-launch.sh 
-
 ## To Do:
 
 1. Make the config more "universal" with regard to monitors. (Currently you will need to tweak the `bspwmrc` for your displays.) This todo can likely be accomplished with either of the following tools:

@@ -1,4 +1,6 @@
 #!/bin/bash
+# Original: https://gist.github.com/danielcbaldwin/3b146824f12355e5bac7e4102ab483c7
+
 bspc subscribe monitor | while read -r line; do
   case $line in
       monitor_add*|monitor_geometry*)

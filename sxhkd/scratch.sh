@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 bspc-list-all-windows(){
     for i in `bspc query -N`; do 
         echo -en "\n$i "; xprop -id $i 2> /dev/null| grep CLASS
