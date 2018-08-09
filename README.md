@@ -92,8 +92,8 @@ Restart your display manager and login.
 
 1. Make the config more "universal" with regard to monitors. (Currently you will need to tweak the `bspwmrc` for your displays.) This todo can likely be accomplished with either of the following tools:
 
-a. https://github.com/Ventto/mons/
+    a. https://github.com/Ventto/mons/
 
-OR 
+    OR 
 
-b. https://github.com/wertarbyte/autorandr & https://www.reddit.com/r/bspwm/comments/53x8qh/for_those_of_you_who_use_a_laptop_and_external/d7xv9yu/
+    b. https://github.com/wertarbyte/autorandr & https://www.reddit.com/r/bspwm/comments/53x8qh/for_those_of_you_who_use_a_laptop_and_external/d7xv9yu/
