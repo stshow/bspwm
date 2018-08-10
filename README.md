@@ -2,6 +2,10 @@
 
 bspwm configs
 
+##### Screenshot:
+
+![screenshot-0810-095423.png](screenshot-0810-095423.png)
+
 ### Polybar
 https://github.com/jaagr/polybar
 
