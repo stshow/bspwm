@@ -126,9 +126,13 @@ super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # Lock screen 
-
 control + alt + l
     i3lock -c 000000
+
+# Screenshot (Imagemagick)
+super + x
+    import ~/Pictures/screenshots/screenshot-$(date +%m%d-%H%M%S).png
+
 
 # firefox window
 super + q
