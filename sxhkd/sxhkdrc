@@ -23,9 +23,14 @@ super + alt + Escape
 	bspc quit
 
 # close and kill
-super + {_,shift + }w
+#super + {_,shift + }w
+#	bspc node -{c,k}
+
+# close and kill (I prefer i3 bindings).
+super + {_,shift + }q
 	bspc node -{c,k}
 
+ 
 # alternate between the tiled and monocle layout
 super + m
 	bspc desktop -l next
@@ -145,6 +150,7 @@ alt + shift + z
 alt + t 
     ~/.config/sxhkd/scratch.sh talkdesk
 
+## volume control
 XF86AudioRaiseVolume
     vol-up
 XF86AudioLowerVolume 
@@ -152,9 +158,24 @@ XF86AudioLowerVolume
 XF86AudioMute 
     vol-mute
 
+## If your sound card is predictable, then this should work.
+#XF86AudioRaiseVolume
+#    /usr/bin/pactl set-sink-volume 0 +5%
+#XF86AudioLowerVolume 
+#    /usr/bin/pactl set-sink-volume 0 -5% 
+#XF86AudioMute 
+#    /usr/bin/pactl set-sink-mute 0 toggle
+
+
+
+## Spotify control 
+## https://github.com/johnhamelink/spotify-status/blob/master/spotify-control.sh
 XF86AudioNext 
     spotify-control next
 XF86AudioPrev
     spotify-control prev
 XF86AudioPlay 
     spotify-control play
+
+
+
