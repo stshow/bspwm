@@ -1,0 +1,3 @@
+#!/bin/bash
+ACTIVE_PA_SINK=`pacmd list-sinks |awk '/* index:/{print $3}'`
+pactl set-sink-volume $ACTIVE_PA_SINK +5%
