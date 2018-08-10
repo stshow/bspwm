@@ -30,9 +30,13 @@ super + alt + Escape
 super + {_,shift + }q
 	bspc node -{c,k}
 
+## Hide current node
+super + shift + {minus}
+    bspc node --flag hidden; bspce node -f
+
 ## Unhide nodes
 super + {minus}
-    bspc node $(bspc query -N -n .hidden | tail -n1) -g hidden=off 
+    bspc node $(bspc query -N -n .hidden | tail -n1) -g hidden=off
 
 # alternate between the tiled and monocle layout
 super + m
