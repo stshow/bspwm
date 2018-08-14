@@ -142,7 +142,7 @@ super + x
 
 
 # firefox window
-super + q
+super + w
     firefox
 
 # Slack scratch
