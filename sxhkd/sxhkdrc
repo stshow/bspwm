@@ -46,6 +46,10 @@ super + {minus}
 super + m
 	bspc desktop -l next
 
+# focus the next/previous node in the same window (helpful with monocle)
+super + {comma,period}
+    bspc node -f {next,prev}.local
+
 # send the newest marked node to the newest preselected node
 super + y
 	bspc node newest.marked.local -n newest.!automatic.local
