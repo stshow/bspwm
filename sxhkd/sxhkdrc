@@ -150,8 +150,7 @@ control + alt + l
 
 # Screenshot (Imagemagick)
 super + x
-    import ~/Pictures/screenshots/screenshot-$(date +%m%d-%H%M%S).png
-
+    mkdir -p ~/Pictures/screenshots/$(date -I) && import ~/Pictures/screenshots/$(date -I)/screenshot-$(date +%m%d-%H%M%S).png
 
 # firefox window
 super + w
