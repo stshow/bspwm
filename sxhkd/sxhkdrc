@@ -36,7 +36,7 @@ super + control + {minus,equal}
 
 ## Hide current node
 super + shift + {minus}
-    bspc node --flag hidden; bspce node -f
+    bspc node --flag hidden; bspc node -f
 
 ## Unhide nodes
 super + {minus}
